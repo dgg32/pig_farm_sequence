@@ -15,6 +15,8 @@ For the canu assembly please refer to:
 
 Using pb-metagenome-binning:
 
+`conda activate pb-binning`
+
 `cd binning_folder`
 
 `snakemake  --snakefile '/home/sih13/tool/pb-metagenomics-tools/Genome-Binning-Pipeline/Snakefile-genomebinning' --configfile '/home/sih13/tmp/martinique_metagenome_pacbio/661/call-export_fastq/execution/pb_binning_unitig_contig/config.yaml'   -j 48 --use-conda`
