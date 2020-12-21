@@ -1,7 +1,8 @@
+
 # pig_farm_sequence
 DSMZ pig farm sequencing project
 
-
+## Assembly
 To calculate the read coverage of contigs:
 
  1. canu assembly of the PacBio sequences
@@ -16,7 +17,7 @@ To assemble the 9er samples, this command is used:
 
 `canu -assemble -p asm -d co_ass_9_2 genomeSize=500000000 -maxInputCoverage=5000 -pacbio-hifi ./input batOptions="-eg 0.0 -sb 0.001 -dg 0 -db 3 -dr 0 -ca 2000 -cp 200"`
 
-
+## Binning
 Using pb-metagenome-binning:
 
 `conda activate pb-binning`
@@ -25,7 +26,7 @@ Using pb-metagenome-binning:
 
 `snakemake  --snakefile '/home/sih13/tool/pb-metagenomics-tools/Genome-Binning-Pipeline/Snakefile-genomebinning' --configfile '/home/sih13/tmp/martinique_metagenome_pacbio/661/call-export_fastq/execution/pb_binning_unitig_contig/config.yaml'   -j 48 --use-conda`
 
-
+## Contig analyses
 For selective contigs, a further analysis can be done.
 
 1. checkm
