@@ -11,6 +11,10 @@ To calculate the read coverage of contigs:
 
 For the canu assembly please refer to:
  https://github.com/dgg32/canu_slurm
+ 
+To assemble the 9er samples, this command is used:
+
+`canu -assemble -p asm -d co_ass_9_2 genomeSize=500000000 -maxInputCoverage=5000 -pacbio-hifi ./input batOptions="-eg 0.0 -sb 0.001 -dg 0 -db 3 -dr 0 -ca 2000 -cp 200"`
 
 
 Using pb-metagenome-binning:
