@@ -31,3 +31,7 @@ For selective contigs, a further analysis can be done.
 
 1. checkm
 `sbatch -p mid  -c 8 --mem=64G --wrap="checkm  lineage_wf -t 8 -x fasta '/home/sih13/tmp/martinique_metagenome_pacbio/co_ass_9_2/bigger_than_1m' '/home/sih13/tmp/martinique_metagenome_pacbio/co_ass_9_2/bigger_than_1m_checkm'"`
+
+2. dfast
+
+dfast --genome input.fasta -o input.fasta_dfast --cpu 8 --use_original_name t
